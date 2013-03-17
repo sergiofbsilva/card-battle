@@ -1,0 +1,65 @@
+#
+# 'battle' definition file: 
+#
+# This file contains the game description. It must be supplied when 
+# the game is submitted to intigos.com.
+
+
+# game_id is the identification of your game. You can find the 
+# correct identification at intigos.com 
+# Development -> Your Games -> [game] -> Details
+
+game_id: <insert your game id here>
+
+# autoVersion automaticly increments the version of your game for each 
+# submission successfully processed. If you prefer to choose your own 
+# version name, you can remove this tag (or change it to false) and use 
+# the 'version' properties  
+
+autoVersion: true
+
+# runtime declares in what runtime is your game being developed. For more 
+# information about this, please consult http://intigos.com/docs/
+
+runtime: js
+
+# runtimeVersion declares what version of runtime are you using in your game.
+
+runtimeVersion: 1.0.0
+
+# screenSizes states the types of screens you are supporting. 
+# On http://intigos.com/docs/ you can find more information about this
+
+screenSizes:
+   - normal
+   
+# icons points to the files representing this game icons for each one of the 
+# sizes
+
+icons:
+  - size: 32x32
+    image: /resources/32.png
+  - size: 64x64
+    image: /resources/64.png
+  - size: 128x128
+    image: /resources/128.png
+    
+# description,controls and changelog points to the files containing the 
+# texts that appear in your game profile. 
+
+description: /text/description.txt
+controls: /text/controls.txt
+changelog: /text/changelog.txt
+
+# src points to the source code directory
+
+src: /src
+
+# resources points to the resources directory
+
+resources: /resources
+
+# entryPoint is used in the js runtime to declare what is the first 
+# page to be loaded.
+
+entryPoint: /src/start.html
